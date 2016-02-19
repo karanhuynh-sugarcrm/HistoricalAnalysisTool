@@ -206,3 +206,47 @@ $.tablesorter.themes.bootstrap = {
   </body>
 
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Historical Analysis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://tablesorter.com/docs/css/jq.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+  <link rel="stylesheet" href="http://mottie.github.io/tablesorter/css/theme.jui.css">   
+   
+<link rel="stylesheet" href"http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/cupertino/jquery-ui.css">
+ <script src="http://tablesorter.com/jquery-latest.js"></script>
+  <script src="http://mottie.github.io/tablesorter/js/jquery.tablesorter.widgets.js"></script>
+
+
+  <script src="http://tablesorter.com/__jquery.tablesorter.min.js"></script>
+<link rel="stylesheet" href="http://mottie.github.io/tablesorter/css/theme.bootstrap.css"> 
+
+ 
+  
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    
+   $('.tablesorter').tablesorter({
+    theme: 'bootstrap',
+    widgets: ['zebra']
+
+   });
+       
+    $(document).on('click', '#submit', function(e){
+      var a=$(this);
+      a.html("Loading...")
+      });
+  });
+</script>
+
+
+</head>
+  <body style="margin:85px">
+    {{{body}}}
+  </body>
