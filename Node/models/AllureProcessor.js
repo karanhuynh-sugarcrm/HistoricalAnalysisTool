@@ -1,6 +1,5 @@
 var request = require('request');
 var cheerio = require('cheerio');
-var HashMap = require('hashmap');
 var async = require('async');
 var main = require('./AllureDiffMain');
 var fs = require('fs');

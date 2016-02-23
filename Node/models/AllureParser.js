@@ -91,7 +91,6 @@ function simplifyTestCases(uri, testSuiteUid, testCases, buildId) {
             'uri' : uri + '/#/xunit/' + testSuiteUid + '/' + testCases.uid,
             'status' : testCases.status,
             'buildId' : buildId,
-            'stabilityPercen' : 100
         };
     return simplifiedTestCases;
 }

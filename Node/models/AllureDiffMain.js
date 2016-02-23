@@ -66,7 +66,6 @@ module.exports = {
 			}
 			var allureDiff = new AllureDiff().statusDiff(results);
 			template.tests = allureDiff;
-			console.log(allureDiff);
 			success(res, template);
 		});
 	}

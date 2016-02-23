@@ -30,6 +30,9 @@ var hbs = exphbs.create({
 	      }
 		},
 		'getLink' : function(test) {
+			if (test.status == "NONE") {
+				return test.status;
+			}
 			return "<a href='" + test.link +  "'>" + test.status + "</a>";
 		}
 	}
@@ -37,36 +40,8 @@ var hbs = exphbs.create({
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-// Set up the body parser
+app.use('/static', express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: false })); 
 app.use(require('./controllers'));
-
-
-    			/*
-      switch(status) {
-        case 'PASSED' : {
-          return '#66cc33';
-        }
-        break;
-        case 'FAILED' : {
-          return '#cc3300';
-        }
-        break;
-        case 'BROKEN' : {
-          return '#cc3300';
-        }
-        break;
-        case 'PENDING' : {
-          return '#0099ff'
-        }
-        break;
-        default : {
-          return '#dee3f2'
-        }
-      } */
-    
-    
-
-
 
 app.listen(3000);
