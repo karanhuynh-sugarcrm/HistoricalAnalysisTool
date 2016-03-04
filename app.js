@@ -5,7 +5,9 @@ var app = express();
 
 var hbs = exphbs.create({
 	defaultLayout: 'main',
+	// Helper functions used in home.handlebars
 	helpers: {
+		// Assigns cell colour based on status
 		'getStatusColour' : function(status) {
 	      switch(status) {
 		        case 'PASSED' : {
@@ -21,14 +23,15 @@ var hbs = exphbs.create({
 		        }
 		        break;
 		        case 'PENDING' : {
-		          return '#CCEEFF'
+		          return '#CCEEFF';
 		        }
 		        break;
 		        default : {
-		          return '#E4E3E8'
+		          return '#E4E3E8';
 		        }
 	      }
 		},
+		// Link to stack trace 
 		'getLink' : function(test) {
 			if (test.status == "NONE") {
 				return test.status;
