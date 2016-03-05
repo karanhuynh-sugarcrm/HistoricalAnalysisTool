@@ -1,0 +1,39 @@
+{
+  "time" : {
+    "start" : 1445994616811,
+    "stop" : 1446016502124,
+    "duration" : 21885313
+  },
+  "testSuites" : [ {
+    "uid" : "d13e5f4e1b89cc35",
+    "name" : "com.sugarcrm.test.RevenueLineItems.RevenueLineItems_26114",
+    "title" : "Revenue line items 26114",
+    "time" : {
+      "start" : 1446003645483,
+      "stop" : 1446003802696,
+      "duration" : 157213
+    },
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "fb1b97fba7e1393e",
+      "name" : "RevenueLineItems_26114_execute",
+      "title" : "Revenue line items 26114 execute",
+      "time" : {
+        "start" : 1446003645483,
+        "stop" : 1446003802696,
+        "duration" : 157213
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    } ]
+  }]
+}
+

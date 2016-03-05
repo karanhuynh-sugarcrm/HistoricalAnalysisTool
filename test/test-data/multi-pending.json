@@ -1,0 +1,61 @@
+{
+  "time" : {
+    "start" : 1445994616811,
+    "stop" : 1446016502124,
+    "duration" : 21885313
+  },
+  "testSuites" : [ {
+    "uid" : "af56250ae70e3e1a",
+    "name" : "com.sugarcrm.test.calendar.Calendar_20346",
+    "title" : "Calendar 20346",
+    "time" : {
+      "start" : 1456642527605,
+      "stop" : 1456643544090,
+      "duration" : 1016485
+    },
+    "statistic" : {
+      "total" : 3,
+      "passed" : 2,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "48b012557d6cd9d",
+      "name" : "Calendar_20346_Meetings_execute",
+      "title" : "Calendar 20346 meetings execute",
+      "time" : {
+        "start" : 1456642527605,
+        "stop" : 1456643048786,
+        "duration" : 521181
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "48b012557d6cd9d",
+      "name" : "Calendar_20346_Meetings_test",
+      "title" : "Calendar 20346 meetings test",
+      "time" : {
+        "start" : 1456642527605,
+        "stop" : 1456643048786,
+        "duration" : 521181
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "ed00195337d2e217",
+      "name" : "Calendar_20346_Calls_execute",
+      "title" : "Calendar 20346 calls execute",
+      "time" : {
+        "start" : 1456643049363,
+        "stop" : 1456643544090,
+        "duration" : 494727
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    } ]
+  }]
+}
+
