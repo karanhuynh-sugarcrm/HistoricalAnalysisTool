@@ -3,36 +3,11 @@
 <head>
   <meta charset="utf-8">
   <!-- Styling -->
-  <link rel="stylesheet" href="static/bootstrap.css">
-  <link rel="stylesheet" href="static/ts.css">
+  <link rel="stylesheet" href="static/_bootstrap.css">
+  <link rel="stylesheet" href="static/prettify.css">
   <link rel="stylesheet" href="static/theme.css">
   <!-- jQuery -->
-  <script src="static/jq.js"></script>
-  <script src="static/jquery.tablesorter.js"></script>
-  <script src="static/jquery.tablesorter.widgets.js"></script>
-
-  <script type="text/javascript">
-  $(document).ready(function() {
-    $("#submit").click(function(e) {
-        var $btn=$(this);
-        $btn.html("Processing...");
-    });
-    // call the tablesorter plugin and apply the uitheme widget
-    $("#table").tablesorter({
-      theme : "ice",
-      sortList : [[0,0]],
-      widthFixed: true,
-      widgets : [ "uitheme", "filter"],
-      widgetOptions : {
-        // hide the filter row when not active
-        filter_hideFilters : true,
-        filter_ignoreCase : true,
-        filter_reset : 'button.reset'
-      }
-    });
-    
-  });
-  </script>
+  <script src="static/public.js"></script>
 </head>
 <body style="margin:65px">
   {{{body}}}

@@ -1,0 +1,23 @@
+{
+  "name": "HistoricalAnalysisTool",
+  "description": "Visual tool to see unstable tests",
+  "main": "index.js",
+  "authors": [
+    "Karan Huynh"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "^2.2.1",
+    "jquery.tablesorter": "^2.25.2"
+  }
+}

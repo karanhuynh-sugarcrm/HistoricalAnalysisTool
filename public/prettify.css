@@ -1,0 +1,37 @@
+.btn-success {
+  color: #555;
+  background-color: #dff6a7;
+  border-color: #cef179;
+}
+.btn-success:focus,
+.btn-success.focus {
+  color: #555;
+  background-color: #dff6a7;
+  border-color: #cef179;
+}
+.btn-success:hover {
+  color: #555;
+  background-color: #cef179;
+  border-color: #b5ea34;
+}
+
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #a7dff6;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+body,div,h1{font-family:'trebuchet ms', verdana, arial;margin:0;padding:0;}
+body{background-color:#fff;color:#333;font-size:small;margin:0;padding:0;}
+h1{font-size:29px;font-weight:400;margin:0;}
+h2{color:#333;font-size:small;font-weight:400;margin:0;}
+
+form{font-size:10pt;margin-bottom:20px;width:auto;}
+form fieldset{padding:10px;text-align:left;width:140px;}
+

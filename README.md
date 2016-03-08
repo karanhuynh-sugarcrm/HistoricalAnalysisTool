@@ -6,6 +6,7 @@ Hovering over the grey area under the table headers will trigger the hidden sear
 
 Setup
 ------------
-- Install node.js
-- Run 'npm install' to install required node modules
-- Run 'app.js' to start the server
+* `npm install`
+* `bower install`
+* `grunt buildBower`
+* `node app.js`

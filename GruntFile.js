@@ -9,8 +9,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     
     jshint: { // Task: JSHint
-		all: ['Gruntfile.js', 'main/**/*.js', 'app.js']
-	},
+    all: ['Gruntfile.js', 'main/**/*.js', 'app.js']
+  },
 
 
     mochaTest: {
@@ -24,8 +24,27 @@ module.exports = function(grunt) {
         src: ['test/**/*.js']
       }
     },
+  bower_concat: {
+    all: {
+      dest: 'public/_bower.js',
+      cssDest: 'public/_bootstrap.css',
+      bowerOptions: {
+        relative: false
+      },
+      mainFiles: {
+          bootstrap: ['dist/css/bootstrap.css'],
+          tablesorter: ['dist/js/jquery.tablesorter.js', 'dist/js/jquery.tablesorter.widgets.js.'],
+
+        }
+    }
+  },
+
+  uglify: {
+      'public/public.js': ['public/_bower.js', 'public/client.js'],
+   }
   });
 
   grunt.registerTask('default', 'jshint');
   grunt.registerTask('test', ['jshint',  'mochaTest']);
+  grunt.registerTask('buildBower', ['bower_concat', 'uglify']);
 };
